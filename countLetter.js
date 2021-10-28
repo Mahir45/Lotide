@@ -1,14 +1,6 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log ("✅✅Assertion Passed:");
-  }
-  else {
-    console.log("🛑🛑Assertion Failed");
-  }
-  
-};
-assertEqual("6", "2");
-  assertEqual(1, 1);
+
+//assertEqual("6", "2");
+  //assertEqual(1, 1);
 
   const countLetters = function (words) {
    const obj = {} // this is where the letters are stored
@@ -22,6 +14,7 @@ assertEqual("6", "2");
     }
     }
   return obj
-  }
-
+  } 
+  console.log (countLetters("lighthouse in the house"))
+   
  
