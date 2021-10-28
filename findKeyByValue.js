@@ -7,8 +7,17 @@ const assertEqual = function(actual, expected) {
   }
   
 };
+assertEqual("6", "2");
+  assertEqual(1, 1);
 
-const findKeyByValue = function(obj, value) {
+  const bestTVShowsByGenre = { 
+    sci_fi: "The Expanse",
+    comedy: "Brooklyn Nine-Nine",
+    drama: "The Wire"
+    };
+
+
+  const findKeyByValue = function(obj, value) {
   const array = Object.keys(bestTVShowsByGenre);
   const answer = 'The Wire';
   let foundKey = '';
