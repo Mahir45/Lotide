@@ -9,8 +9,7 @@ const assertEqual = function(actual, expected) {
   }
   
 };
-assertEqual("6", "2");
-  assertEqual(1, 1);
+
 
 
 // Returns true if both objects have identical keys with identical values.
@@ -26,7 +25,7 @@ assertEqual("6", "2");
     }
     else {
       for (let i in object1) {
-        if (Object.keys(object1[i]) === Object.keys(object2[i])) {
+        if (Object.keys(object1[i]) !== Object.keys(object2[i])) {
           return false;
         }
         return true; 
