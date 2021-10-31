@@ -18,34 +18,31 @@ const assertEqual = function(actual, expected) {
 
   const eqObjects = function(object1, object2) {
     
-    
-    
+ 
     if (Object.keys(object1).length !== Object.keys(object2).length) {
       return false;
-    }
-    else {
+    } else {
       for (let i in object1) {
-        if (Object.keys(object1[i]) !== Object.keys(object2[i])) {
+    
+        if (object1[i] !== object2[i]){
           return false;
         }
-        return true; 
-
-
-      } 
-    } 
-
-    
+        }  
         
+        return true;
+    }
+    
+      
+      }
 
-        }
 
       
-    
-  
+     
   const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-eqObjects(ab, ba)
+  const ba = { b: "2", a: "1" };
 
+  
+  assertEqual(eqObjects(ab,ba),true);
 
 
 
