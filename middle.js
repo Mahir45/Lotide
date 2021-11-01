@@ -1,3 +1,4 @@
+
 const middle = function(array) {
   if (array.length % 2 === 0) {
 
@@ -11,4 +12,5 @@ const middle = function(array) {
   }
 }
 
-console.log(middle([1, 2, 7, 3]))
+
+module.exports = middle
