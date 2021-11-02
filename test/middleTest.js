@@ -10,7 +10,15 @@ describe("#middle", () => {
   it("returns '4' && '6' for the middle of [5, 6, 4, 8 ]", () => {
     assert.deepEqual(middle([5, 6, 4, 8]), [6, 4]); 
   });
-});
+  it('should return empty array for the middle of [1, 7]', () => {
+    assert.deepEqual(middle([1, 7]), [])
+  });
+  it('should return empty array for the middle of [1]', () => {
+    assert.deepEqual(middle([1]), [])
+  }
+
+
+)});
 
 
 
