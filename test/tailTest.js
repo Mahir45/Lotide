@@ -7,10 +7,10 @@ const { assert } = require('chai');
 
 describe("#tail", () => {
   it("returns 3 for length of [1, 2, 3]", () => {
-    assert.strictEqual((tail([1, 2, 3])).length, 2);
+    assert.deepEqual((tail([1, 2, 3])).length, 2);
   });
   it("returns '6' for ['5', '6']", () => {
-    assert.strictEqual((tail(['6', '5'])).length, 1); 
+    assert.deepEqual((tail(['6', '5'])).length, 1); 
   }); 
   
 });
